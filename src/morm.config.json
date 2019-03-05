@@ -1,0 +1,8 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "st2diio",
+  "password": "pssw0rD&",
+  "database": "iLovePragmatic"
+}

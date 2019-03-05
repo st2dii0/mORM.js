@@ -1,0 +1,34 @@
+{
+  "name": "n0rm",
+  "version": "1.0.0",
+  "description": "ORM - school project",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "pg": "^7.8.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/preset-env": "^7.3.4"
+  },
+  "scripts": {
+    "dev": "npx babel-node ./src/main.js",
+    "build": "npx babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/st2dii0/mORM.js.git"
+  },
+  "author": "st2dii0 <st2diio@protonmail.ch>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/st2dii0/mORM.js/issues"
+  },
+  "homepage": "https://github.com/st2dii0/mORM.js#readme"
+}
