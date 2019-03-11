@@ -35,6 +35,14 @@ export default class mOrm {
                 }
                         
             }
+            this.config.synchronize = dbConfig.synchronize;
+            this.config.entities = dbConfig.entities;
+            this.entities = {  };
+            this.config.entities.forEach(element => {
+            this.entities[element.name] = element;
+            });
+            
+            
             console.log(this.config);        
 
             //Init database engine
@@ -50,5 +58,12 @@ export default class mOrm {
             }
 
             await this.dbInstance.initialize();
+        }
+
+        async InteruptConnection(){
+            this.dbInstance.disconect();
+        }
+        getEntity(name){
+            return new this.entities[name](this.dbInstance);
         }
     }

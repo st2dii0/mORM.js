@@ -1,10 +1,12 @@
 export default class Core {
-    constructor({ host, port, username, password, database }) {
+    constructor({ host, port, username, password, database, synchronize, entities }) {
         this.host = host;
         this.port = port; 
         this.username = username; 
         this.password = password;
         this.database = database
+        this.synchronize = synchronize,
+        this.entities = entities
     }
 
     dump(){
@@ -15,6 +17,5 @@ export default class Core {
         password: ${this.password};
         database: ${this.database}
         `);
-        
     }
   }
